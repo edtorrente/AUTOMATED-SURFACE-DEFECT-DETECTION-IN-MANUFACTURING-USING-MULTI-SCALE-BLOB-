@@ -84,7 +84,7 @@ plt.suptitle('Detection Overlay Best Practice: Visualize on Processed Image',
 plt.tight_layout()
 
 # Save the figure
-os.makedirs('images', exist_ok=True)
+os.makedirs('images', mode=0o755, exist_ok=True)
 plt.savefig('images/results.png', dpi=150, bbox_inches='tight', facecolor='white')
 print("Figure saved to: images/results.png")
 
